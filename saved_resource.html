@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://fiddle.jshell.net/aybalasubramanian/4tKuF/show/light/ -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>slimScroll external control - jsFiddle demo by aybalasubramanian</title>
+  
+  <script type="text/javascript" src="jquery-1.7.js"></script><style type="text/css"></style>
+  
+  <link rel="stylesheet" type="text/css" href="normalize(1).css">
+  
+  
+  <script type="text/javascript" src="jquery-ui.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    #top {
+  height:20px;
+  width:100%;   
+}
+
+#outer {
+   position:absolute;
+   top:20px;
+   bottom:0px;
+}
+
+  </style>
+  
+</head>
+<body>
+  <div id="outer" class="slimScrollDiv" style="overflow: hidden;">
+<div id="top">
+    this is the top bar
+</div>
+<div id="slimtest1" style="overflow: hidden; height: 100%;">
+<img src="sample8.jpg" style="float:left; width:200px; margin:10px 10px 10px 0" alt="Cool image" title="Cool image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus, felis interdum condimentum consectetur, nisl libero elementum eros, vehicula congue lacus eros non diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus mauris lorem, lacinia id tempus non, imperdiet et leo. Cras sit amet erat sit amet lacus egestas placerat. Aenean ultricies ultrices mauris ac congue. In vel tortor vel velit tristique tempus ac id nisi. Proin quis lorem velit. Nunc dui dui, blandit a ullamcorper vitae, congue fringilla lectus. Aliquam ultricies malesuada feugiat. Vestibulum placerat turpis et eros lobortis vel semper sapien pulvinar.</p>
+<p>Pellentesque rhoncus aliquet porta. Sed vel magna eu turpis pharetra consequat ut vitae lectus. In molestie sollicitudin mi sit amet convallis. Aliquam erat volutpat. Nullam feugiat placerat ipsum eget malesuada. Nulla facilisis nunc non dolor vehicula pretium. Sed dui magna, sodales id pharetra non, ullamcorper eu sapien. Mauris ac consectetur leo. Mauris consequat, lectus ut bibendum pulvinar, leo magna feugiat enim, eu commodo lacus sem vel ante. Sed tempus metus eget leo mollis vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar rhoncus quam, vel semper tellus viverra id. Nulla rutrum porttitor odio, a rutrum purus gravida non. Etiam ac purus augue, eget vestibulum purus. Aenean venenatis ullamcorper augue, non consequat elit tempor sed. Donec velit sapien, volutpat sed ultricies egestas, semper a ante. Fusce dapibus, quam eget auctor suscipit, nibh leo posuere ante, at auctor nisi lacus in sem. Morbi interdum consectetur euismod. Cras accumsan est lacus. Nulla eleifend, eros vel consequat commodo, arcu nunc malesuada nunc, quis sagittis felis sem ac turpis.</p>
+<p>Nulla rhoncus elementum convallis. Mauris condimentum aliquet egestas. Ut iaculis nisi eget tellus accumsan venenatis. Maecenas imperdiet aliquam porta. Aenean ultrices dolor sed quam laoreet varius. Curabitur condimentum blandit erat, quis accumsan eros interdum vitae. Curabitur ligula arcu, sollicitudin vitae iaculis sed, blandit sit amet enim. Morbi ullamcorper, metus vel mollis tristique, arcu turpis malesuada nisi, at dignissim lorem odio a orci. Proin ultrices, ipsum ut vestibulum interdum, libero felis auctor mi, vitae convallis nisl justo ac tellus. Integer nec lacinia turpis. Etiam massa nisl, rhoncus quis rutrum in, pretium eu leo. Proin a velit ut nulla laoreet vestibulum. Curabitur eu elit vitae felis auctor tincidunt. Curabitur tincidunt, metus sed sollicitudin cursus, quam elit commodo erat, ut tempor erat sapien vitae velit. Morbi nec viverra erat.</p>
+<p>Nullam scelerisque facilisis pretium. Vivamus lectus leo, commodo ac sagittis ac, dictum a mi. Donec quis massa ut libero malesuada commodo in et risus. Fusce nunc dolor, aliquet vel rutrum in, molestie sit amet massa. Aliquam suscipit, justo a commodo condimentum, enim sapien fringilla ante, sed lobortis orci lectus in ante. Donec vel interdum est. Donec placerat cursus lacus, eu ultricies nisl tincidunt a. Fusce libero risus, sagittis eleifend iaculis aliquet, condimentum vitae diam. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin leo purus, sodales a venenatis luctus, faucibus ac enim. Sed id metus ac sem lobortis pretium. Mauris faucibus tempor scelerisque. Nunc vulputate interdum tortor, non tincidunt dui condimentum eget. Aenean in porttitor velit. Nam accumsan rhoncus risus id consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus, felis interdum condimentum consectetur, nisl libero elementum eros, vehicula congue lacus eros non diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus mauris lorem, lacinia id tempus non, imperdiet et leo. Cras sit amet erat sit amet lacus egestas placerat. Aenean ultricies ultrices mauris ac congue. In vel tortor vel velit tristique tempus ac id nisi. Proin quis lorem velit. Nunc dui dui, blandit a ullamcorper vitae, congue fringilla lectus. Aliquam ultricies malesuada feugiat. Vestibulum placerat turpis et eros lobortis vel semper sapien pulvinar.</p>
+<p>Pellentesque rhoncus aliquet porta. Sed vel magna eu turpis pharetra consequat ut vitae lectus. In molestie sollicitudin mi sit amet convallis. Aliquam erat volutpat. Nullam feugiat placerat ipsum eget malesuada. Nulla facilisis nunc non dolor vehicula pretium. Sed dui magna, sodales id pharetra non, ullamcorper eu sapien. Mauris ac consectetur leo. Mauris consequat, lectus ut bibendum pulvinar, leo magna feugiat enim, eu commodo lacus sem vel ante. Sed tempus metus eget leo mollis vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar rhoncus quam, vel semper tellus viverra id. Nulla rutrum porttitor odio, a rutrum purus gravida non. Etiam ac purus augue, eget vestibulum purus. Aenean venenatis ullamcorper augue, non consequat elit tempor sed. Donec velit sapien, volutpat sed ultricies egestas, semper a ante. Fusce dapibus, quam eget auctor suscipit, nibh leo posuere ante, at auctor nisi lacus in sem. Morbi interdum consectetur euismod. Cras accumsan est lacus. Nulla eleifend, eros vel consequat commodo, arcu nunc malesuada nunc, quis sagittis felis sem ac turpis.</p>
+<p>Nulla rhoncus elementum convallis. Mauris condimentum aliquet egestas. Ut iaculis nisi eget tellus accumsan venenatis. Maecenas imperdiet aliquam porta. Aenean ultrices dolor sed quam laoreet varius. Curabitur condimentum blandit erat, quis accumsan eros interdum vitae. Curabitur ligula arcu, sollicitudin vitae iaculis sed, blandit sit amet enim. Morbi ullamcorper, metus vel mollis tristique, arcu turpis malesuada nisi, at dignissim lorem odio a orci. Proin ultrices, ipsum ut vestibulum interdum, libero felis auctor mi, vitae convallis nisl justo ac tellus. Integer nec lacinia turpis. Etiam massa nisl, rhoncus quis rutrum in, pretium eu leo. Proin a velit ut nulla laoreet vestibulum. Curabitur eu elit vitae felis auctor tincidunt. Curabitur tincidunt, metus sed sollicitudin cursus, quam elit commodo erat, ut tempor erat sapien vitae velit. Morbi nec viverra erat.</p>
+<p>Nullam scelerisque facilisis pretium. Vivamus lectus leo, commodo ac sagittis ac, dictum a mi. Donec quis massa ut libero malesuada commodo in et risus. Fusce nunc dolor, aliquet vel rutrum in, molestie sit amet massa. Aliquam suscipit, justo a commodo condimentum, enim sapien fringilla ante, sed lobortis orci lectus in ante. Donec vel interdum est. Donec placerat cursus lacus, eu ultricies nisl tincidunt a. Fusce libero risus, sagittis eleifend iaculis aliquet, condimentum vitae diam. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin leo purus, sodales a venenatis luctus, faucibus ac enim. Sed id metus ac sem lobortis pretium. Mauris faucibus tempor scelerisque. Nunc vulputate interdum tortor, non tincidunt dui condimentum eget. Aenean in porttitor velit. Nam accumsan rhoncus risus id consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus, felis interdum condimentum consectetur, nisl libero elementum eros, vehicula congue lacus eros non diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus mauris lorem, lacinia id tempus non, imperdiet et leo. Cras sit amet erat sit amet lacus egestas placerat. Aenean ultricies ultrices mauris ac congue. In vel tortor vel velit tristique tempus ac id nisi. Proin quis lorem velit. Nunc dui dui, blandit a ullamcorper vitae, congue fringilla lectus. Aliquam ultricies malesuada feugiat. Vestibulum placerat turpis et eros lobortis vel semper sapien pulvinar.</p>
+<p>Pellentesque rhoncus aliquet porta. Sed vel magna eu turpis pharetra consequat ut vitae lectus. In molestie sollicitudin mi sit amet convallis. Aliquam erat volutpat. Nullam feugiat placerat ipsum eget malesuada. Nulla facilisis nunc non dolor vehicula pretium. Sed dui magna, sodales id pharetra non, ullamcorper eu sapien. Mauris ac consectetur leo. Mauris consequat, lectus ut bibendum pulvinar, leo magna feugiat enim, eu commodo lacus sem vel ante. Sed tempus metus eget leo mollis vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar rhoncus quam, vel semper tellus viverra id. Nulla rutrum porttitor odio, a rutrum purus gravida non. Etiam ac purus augue, eget vestibulum purus. Aenean venenatis ullamcorper augue, non consequat elit tempor sed. Donec velit sapien, volutpat sed ultricies egestas, semper a ante. Fusce dapibus, quam eget auctor suscipit, nibh leo posuere ante, at auctor nisi lacus in sem. Morbi interdum consectetur euismod. Cras accumsan est lacus. Nulla eleifend, eros vel consequat commodo, arcu nunc malesuada nunc, quis sagittis felis sem ac turpis.</p>
+<p>Nulla rhoncus elementum convallis. Mauris condimentum aliquet egestas. Ut iaculis nisi eget tellus accumsan venenatis. Maecenas imperdiet aliquam porta. Aenean ultrices dolor sed quam laoreet varius. Curabitur condimentum blandit erat, quis accumsan eros interdum vitae. Curabitur ligula arcu, sollicitudin vitae iaculis sed, blandit sit amet enim. Morbi ullamcorper, metus vel mollis tristique, arcu turpis malesuada nisi, at dignissim lorem odio a orci. Proin ultrices, ipsum ut vestibulum interdum, libero felis auctor mi, vitae convallis nisl justo ac tellus. Integer nec lacinia turpis. Etiam massa nisl, rhoncus quis rutrum in, pretium eu leo. Proin a velit ut nulla laoreet vestibulum. Curabitur eu elit vitae felis auctor tincidunt. Curabitur tincidunt, metus sed sollicitudin cursus, quam elit commodo erat, ut tempor erat sapien vitae velit. Morbi nec viverra erat.</p>
+<p>Nullam scelerisque facilisis pretium. Vivamus lectus leo, commodo ac sagittis ac, dictum a mi. Donec quis massa ut libero malesuada commodo in et risus. Fusce nunc dolor, aliquet vel rutrum in, molestie sit amet massa. Aliquam suscipit, justo a commodo condimentum, enim sapien fringilla ante, sed lobortis orci lectus in ante. Donec vel interdum est. Donec placerat cursus lacus, eu ultricies nisl tincidunt a. Fusce libero risus, sagittis eleifend iaculis aliquet, condimentum vitae diam. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin leo purus, sodales a venenatis luctus, faucibus ac enim. Sed id metus ac sem lobortis pretium. Mauris faucibus tempor scelerisque. Nunc vulputate interdum tortor, non tincidunt dui condimentum eget. Aenean in porttitor velit. Nam accumsan rhoncus risus id consectetur.</p>
+</div><div class="slimScrollBar  ui-draggable" style="border-radius: 7px; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; z-index: 99; right: 1px; height: 340.697346600332px; background: rgb(0, 0, 0);"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: block; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+$(function() {
+    $('#slimtest1').slimScroll({
+        height: '200px'
+    });
+});
+
+/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ *
+ * Version: 0.3.0
+ * 
+ */
+(function($) {
+
+    jQuery.fn.extend({
+        slimScroll: function(o) {
+
+            var ops = o;
+            //do it for every element that matches selector
+            this.each(function(){
+
+            var isOverPanel, isOverBar, isDragg, queueHide, barHeight,
+                divS = '<div></div>',
+                minBarHeight = 30,
+                releaseScroll = false,
+                o = ops || {},
+                wheelStep = parseInt(o.wheelStep) || 20,
+                cwidth = o.width || '100%',
+                cheight = o.height || 'auto',
+                size = o.size || '7px',
+                color = o.color || '#000',
+                position = o.position || 'right',
+                distance = o.distance || '1px',
+                start = o.start || 'top',
+                opacity = o.opacity || .4,
+                alwaysVisible = true || o.alwaysVisible === true,
+                railVisible = o.railVisible || true,
+                railColor = o.railColor || '#333',
+                railOpacity = o.railOpacity || 0.2;
+            
+                //used in event handlers and for better minification
+                var me = $(this);
+                var parent = me.parent();
+
+                //wrap content
+                var wrapper = me.parent().addClass('slimScrollDiv');
+
+                //update style for the div
+                parent.css({
+                    overflow: 'hidden',
+                });
+                
+                me.css({
+                    overflow: 'hidden',
+                    height:'100%'
+                });
+
+                //create scrollbar rail
+                var rail  = $(divS).css({
+                    width: size,
+                    height: '100%',
+                    position: 'absolute',
+                    top: 0,
+                    display: (alwaysVisible && railVisible) ? 'block' : 'none',
+                    'border-radius': size,
+                    background: railColor,
+                    opacity: railOpacity,
+                    zIndex: 90
+                });
+
+                //create scrollbar
+                var bar = $(divS).attr({ 
+                    'class': 'slimScrollBar ', 
+                    style: 'border-radius: ' + size 
+                    }).css({
+                        background: color,
+                        width: size,
+                        position: 'absolute',
+                        top: 0,
+                        opacity: opacity,
+                        display: alwaysVisible ? 'block' : 'none',
+                        BorderRadius: size,
+                        MozBorderRadius: size,
+                        WebkitBorderRadius: size,
+                        zIndex: 99
+                });
+
+                //set position
+                var posCss = (position == 'right') ? { right: distance } : { left: distance };
+                rail.css(posCss);
+                bar.css(posCss);
+
+                //wrap it
+                //me.wrap(wrapper);
+
+                //append to parent div
+                parent.append(bar);
+                parent.append(rail);
+
+                //make it draggable
+                bar.draggable({ 
+                    axis: 'y', 
+                    containment: 'parent',
+                    start: function() { isDragg = true; },
+                    stop: function() { isDragg = false; hideBar(); },
+                    drag: function(e) 
+                    { 
+                        //scroll content
+                        scrollContent(0, $(this).position().top, false);
+                    }
+                });
+
+                //on rail over
+                rail.hover(function(){
+                    showBar();
+                }, function(){
+                    hideBar();
+                });
+
+                //on bar over
+                bar.hover(function(){
+                    isOverBar = true;
+                }, function(){
+                    isOverBar = false;
+                });
+
+                //show on parent mouseover
+                me.hover(function(){
+                    isOverPanel = true;
+                    showBar();
+                    hideBar();
+                }, function(){
+                    isOverPanel = false;
+                    hideBar();
+                });
+
+                var _onWheel = function(e)
+                {
+                    //use mouse wheel only when mouse is over
+                    if (!isOverPanel) { return; }
+
+                    var e = e || window.event;
+
+                    var delta = 0;
+                    if (e.wheelDelta) { delta = -e.wheelDelta/120; }
+                    if (e.detail) { delta = e.detail / 3; }
+
+                    //scroll content
+                    scrollContent(delta, true);
+
+                    //stop window scroll
+                    if (e.preventDefault && !releaseScroll) { e.preventDefault(); }
+                    if (!releaseScroll) { e.returnValue = false; }
+                }
+
+                var scrollContent = function(y, isWheel, isJump)
+                {
+                    var delta = y;
+
+                    if (isWheel)
+                    {
+                        //move bar with mouse wheel
+                        delta = bar.position().top + y * wheelStep;
+
+                        //move bar, make sure it doesn't go out
+                        delta = Math.max(delta, 0);
+                        var maxTop = parent.outerHeight() - bar.outerHeight();
+                        delta = Math.min(delta, maxTop);
+
+                        //scroll the scrollbar
+                        bar.css({ top: delta + 'px' });
+                    }
+
+                    //calculate actual scroll amount
+                    var percentScroll = parseInt(bar.position().top) / (parent.outerHeight() - bar.outerHeight());
+                    delta = percentScroll * (me[0].scrollHeight - parent.outerHeight());
+
+                    if (isJump)
+                    {
+                        delta = y;
+                        var offsetTop = delta / me[0].scrollHeight * parent.outerHeight();
+                        bar.css({ top: offsetTop + 'px' });
+                    }
+
+                    //scroll content
+                    me.scrollTop(delta);
+                    
+
+                    //ensure bar is visible
+                    showBar();
+                }
+
+                var attachWheel = function()
+                {
+                    if (window.addEventListener)
+                    {
+                        this.addEventListener('DOMMouseScroll', _onWheel, false );
+                        this.addEventListener('mousewheel', _onWheel, false );
+                    } 
+                    else
+                    {
+                        document.attachEvent("onmousewheel", _onWheel)
+                    }
+                }
+
+                //attach scroll events
+                attachWheel();
+
+                var getBarHeight = function()
+                {
+                    //calculate scrollbar height and make sure it is not too small
+                    barHeight = Math.max((parent.outerHeight() / me[0].scrollHeight) * parent.outerHeight(), minBarHeight);
+                    bar.css({ height: barHeight + 'px' });
+                }
+
+                //set up initial height
+                getBarHeight();
+
+                var showBar = function()
+                {
+                    //recalculate bar height
+                    getBarHeight();
+                    clearTimeout(queueHide);
+                    
+                    //show only when required
+                    if(barHeight >= me.outerHeight()) {
+                        //allow window scroll
+                        releaseScroll = true;
+                        return;
+                    }
+                    bar.fadeIn('fast');
+                    if (railVisible) { rail.fadeIn('fast'); }
+                }
+
+                var hideBar = function()
+                {
+                    //only hide when options allow it
+                    if (!alwaysVisible)
+                    {
+                        queueHide = setTimeout(function(){
+                            if (!isOverBar && !isDragg) 
+                            { 
+                                bar.fadeOut('slow');
+                                rail.fadeOut('slow');
+                            }
+                        }, 1000);
+                    }
+                }
+
+                //check start position
+                if (start == 'bottom') 
+                {
+                    //scroll content to bottom
+                    bar.css({ top: 'auto', bottom: 0 });
+                    scrollContent(0, true);
+                }
+                else if (typeof start == 'object')
+                {
+                    //scroll content
+                    scrollContent($(start).position().top, null, true);
+
+                    //make sure bar stays hidden
+                    if (!alwaysVisible) { bar.hide(); }
+                }
+            });
+            
+            //maintain chainability
+            return this;
+        }
+    });
+
+    jQuery.fn.extend({
+        slimscroll: jQuery.fn.slimScroll
+    });
+
+})(jQuery);
+
+//]]>  
+
+</script>
+
+
+
+
+
+
+
+</body></html>
